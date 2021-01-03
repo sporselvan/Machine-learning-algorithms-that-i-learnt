@@ -69,4 +69,4 @@ model1<-naive_bayes(admit~.,test,laplace=2)
 p3<-predict(model1,test)
 tab3<-table(p3,test$admit)
 sum(diag(tab3))/sum(tab3)
-1-sum(diag(tab3))/sum(tab3) #misclassification error reduce due to laplace correction
+1-sum(diag(tab3))/sum(tab3) #misclassification error reduced due to laplace correction
