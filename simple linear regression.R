@@ -15,7 +15,7 @@ colSums(is.na(students_data))  #NO Na values
 
 scatter.smooth(students_data$Scores~students_data$Hours,xlab = "Hours",ylab = "score",col="red")
 
-#boxpot for finding outliers 
+#3.boxpot for finding outliers 
 
 boxplot(students_data$Hours,col = "red")
 boxplot(students_data$Scores,col="blue")  #no  outliers
